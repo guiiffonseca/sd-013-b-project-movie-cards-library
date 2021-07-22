@@ -3,12 +3,12 @@
 
 // class MovieList extends Component {
 //   render() {
-//     const {movies} = this.props
+//     const {movies} = this.props;
 //     return (
 //       <div>
-//         <MovieCard/>
+//         <MovieCard />
 //       </div>
-//     )
+//     );
 //   }
 // }
 
