@@ -1,0 +1,4 @@
+
+> movie-library-cards@0.1.0 lint /home/joao/Estudos/Projetos/Modulo-2-FrontEnd/sd-013-b-project-movie-cards-library
+> eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx
+
