@@ -4,7 +4,7 @@ import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    // Usei como referencia o codigo da colega Alice Goncalves para as linhas 8 e 9.
+    // Usei como referencia o codigo da colega Alice Goncalves para as linhas 8 e 9
     const { movie } = this.props;
     const { title, subtitle, storyline, imagePath, rating } = movie;
     return (
