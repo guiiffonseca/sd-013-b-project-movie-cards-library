@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default class Rating extends React.Component {
-  render() {
+  render(){
     const { rating } = this.props;
     return (
       <div className="rating">
