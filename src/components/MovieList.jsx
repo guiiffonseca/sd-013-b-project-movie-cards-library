@@ -9,9 +9,9 @@ class MovieList extends React.Component {
 
     return (
       <div className="movie-list">
-        { movies.map(({ title, subtitle, storyline, rating, imagePath }, index) => (
+        { movies.map(({ title, subtitle, storyline, rating, imagePath }) => (
           <MovieCard
-            key={ index }
+            key={ title }
             title={ title }
             subtitle={ subtitle }
             storyline={ storyline }
