@@ -10,6 +10,7 @@ body {
   display: flex;
   height: 100px;
   justify-content: center;
+  color:whitesmoke;
 }
 
 .page-title {
@@ -31,10 +32,10 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  height: 450px;
   margin: 5px;
   overflow: hidden;
-  width: 300px;
+  width: 400px;
+  height: fit-content;
 }
 
 
@@ -51,6 +52,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
+  padding: 5px;
 }
 
 .movie-card-subtitle {
@@ -58,11 +60,13 @@ body {
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
+  padding: 5px;
 }
 
 .movie-card-storyline {
   font-size: 14px;
   text-align: justify;
+  padding: 5px;
 }
 
 .rating {
@@ -79,5 +83,5 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
-  padding: 12px 20px;
+  padding: 12px 10px;
 }

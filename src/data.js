@@ -23,7 +23,7 @@ const movies = [
   {
     title: 'Appleseed Alpha',
     subtitle: 'Appleseed Alpha',
-    storyline: 'A young female soldier Deunan and her cyborg partner Briareos survive through the post World War 3 apocalyptic New York in search of human\'s future hope, the legendary city of Olympus.',
+    storyline: 'A young soldier Deunan and her cyborg Briareos survive through the post World War 3 apocalyptic New York in search of human\'s future hope, the legendary city of Olympus.',
     rating: 3.8,
     imagePath: 'images/Appleseed_Alpha.jpg',
   },
