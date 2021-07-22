@@ -8,6 +8,9 @@ class MovieCard extends React.Component {
     return (
       <section className="movie-card">
         <img src={ imagePath } alt={ title } className="movie-card-image" />
+        <div className="movie-card-body">
+          <h4 className='movie-card-title'>{ title }</h4>
+        </div>
       </section>
     );
   }
