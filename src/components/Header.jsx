@@ -10,5 +10,5 @@ export default class Header extends React.Component {
         </h1>
       </header>
     );
-  }
+  };
 }
