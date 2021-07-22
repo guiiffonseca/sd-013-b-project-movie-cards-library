@@ -8,7 +8,7 @@ class Header extends Component {
           Movie Cards Library
         </h1>
       </header>
-    )
+    );
   }
 }
 
