@@ -1,4 +1,3 @@
-dev-lucasteixeira-project-movie-cards-library
 import React from 'react';
 
 class Header extends React.Component {
@@ -15,4 +14,3 @@ export default Header;
 
 // implement Header component here
 //
-master
