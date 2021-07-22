@@ -6,11 +6,11 @@ class MovieCart extends React.Component {
     const { movie } = this.props;
     return (
       <div>
-        <h1>{movie.title}</h1>
-        <h2>{movie.subtitle}</h2>
-        <p>{movie.storyline}</p>
-        <img src={movie.imagePath} alt="" />
-        <span>{movie.rating}</span>
+        <h1>{ movie.title }</h1>
+        <h2>{ movie.subtitle }</h2>
+        <p>{ movie.storyline }</p>
+        <img src={ movie.imagePath } alt="" />
+        <span>{ movie.rating }</span>
       </div>
     );
   }
