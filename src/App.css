@@ -7,10 +7,10 @@ body {
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
+  color:whitesmoke;
   display: flex;
   height: 100px;
   justify-content: center;
-  color:whitesmoke;
 }
 
 .page-title {
@@ -32,10 +32,10 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  height: fit-content;
   margin: 5px;
   overflow: hidden;
   width: 400px;
-  height: fit-content;
 }
 
 
@@ -65,8 +65,8 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
-  text-align: justify;
   padding: 5px;
+  text-align: justify;
 }
 
 .rating {
