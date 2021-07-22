@@ -8,12 +8,12 @@ class MovieList extends React.Component {
     const { movies } = this.props;
 
     return (
-      <main className='movie-list'>
+      <main className="movie-list">
         { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
       </main>
     );
-  };
-};
+  }
+}
 
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.shape({
@@ -22,7 +22,7 @@ MovieList.propTypes = {
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
-  })),
+  })).isRequired,
 };
 
 export default MovieList;
