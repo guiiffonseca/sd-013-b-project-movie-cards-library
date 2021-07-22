@@ -4,10 +4,8 @@ import movies from '../data';
 class MovieList extends React.Component {
   render() {
     return (
-      <section className="movies">
-        <div>
-          {movies}
-        </div>
+      <section className="movie-list">
+        <p>{movies.title}</p>
       </section>
     );
   }
