@@ -1,13 +1,10 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header';
 
+// Retornando o Header dentro da dunção App;
 function App() {
-  return (
-    <div className="App">
-      {/* Sua implementação deve ficar aqui. Remova essas duas linhas.Commit Inicial */}
-      Hora de codar! 🚀✍️👨‍💻👩‍💻💪
-    </div>
-  );
+  return <Header />;
 }
 
 export default App;
