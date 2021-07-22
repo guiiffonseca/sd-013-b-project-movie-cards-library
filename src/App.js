@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import MovieList from './components/MovieList';
+import Header from './components/Header';
 
 class App extends React.Component {
   render() {
@@ -30,9 +31,14 @@ class App extends React.Component {
     ];
     return (
       <div>
+        <Header />
         {movies.map((movie, index) => (
-          <MovieList movie={ movie } key={ index } />
+          <>
+            <MovieList movies={ movie } key={ index } />
+            <hr />
+          </>
         ))}
+
       </div>
     );
   }
