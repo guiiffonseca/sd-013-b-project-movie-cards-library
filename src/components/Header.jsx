@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class Header extends Component {
   render() {
@@ -7,8 +7,8 @@ class Header extends Component {
       <header>
         <h1 className="movie-card-header">Movie Cards Library</h1>
       </header>
-    )}
-
+    );
+  }
 }
 
-export default Header
+export default Header;
