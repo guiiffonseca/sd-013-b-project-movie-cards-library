@@ -1,5 +1,4 @@
 import React from 'react';
-import Proptypes from 'prop-types';
 import movies from '../data';
 import MovieCard from './MovieCard';
 
