@@ -9,14 +9,11 @@ class Rating extends React.Component {
     );
   }
 }
-Rating.defaultProps = {
-  rating: 'not found',
-};
 
 Rating.propTypes = {
   rating: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
-  ]),
+  ]).isRequired,
 };
 export default Rating;
