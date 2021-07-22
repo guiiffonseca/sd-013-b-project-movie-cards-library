@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    const { moviesInfo: { title } } = this.props;
+    const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props;
     return (
-      <h1>{ title }</h1>
+      <section>
+        <img src={ imagePath } alt="Poster" />
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
+        <p>{ storyline }</p>
+        <Rating rating={ rating } />
+      </section>
     );
   }
 }
 
-export default MovieCard;
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
 
-// title: 'Kingsglaive',
-// subtitle: 'Final Fantasy XV',
-// // // storyline: 'King Regis, who oversees the land of Lucis, commands his army of soldiers to protect the kingdom from the Niflheim empire\'s plans to steal the sacred crystal.',
-// rating: 4.5,
-// imagePath: 'images/Kingsglaive_Final_Fantasy_XV.jpg',
-// }
+};
+
+export default MovieCard;
