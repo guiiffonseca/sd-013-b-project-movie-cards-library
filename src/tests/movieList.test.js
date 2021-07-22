@@ -1,3 +1,5 @@
+/* eslint-disable import/no-named-as-default-member */
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import MovieCard from '../components/MovieCard';
