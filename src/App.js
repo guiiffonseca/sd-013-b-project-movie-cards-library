@@ -8,9 +8,9 @@ import movies from './data';
 class App extends React.Component {
   render() {
     return (
-      <div className='App'>
+      <div className="App">
         <Header />
-        <MovieList movies={movies} />
+        <MovieList movies={ movies } />
       </div>
     );
   }
