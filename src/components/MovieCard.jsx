@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { movie: { title, subtitle, storyline, rating } } = this.props;
+    const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props;
     return (
       <section className="movie-card">
         <h1>
@@ -11,6 +11,7 @@ class MovieCard extends React.Component {
           {subtitle}
         </h1>
         <p>{storyline}</p>
+        <img src={ imagePath } alt="" />
         <p>{rating}</p>
       </section>
     );

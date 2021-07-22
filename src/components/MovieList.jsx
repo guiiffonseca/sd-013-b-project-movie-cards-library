@@ -7,7 +7,7 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <section>
+      <section className="movie-list">
         { movies.map(({ title, subtitle }) => (
           <MovieCard
             key={ title }
@@ -25,9 +25,6 @@ MovieList.propTypes = {
       {
         title: PropTypes.string.isRequired,
         subtitle: PropTypes.string.isRequired,
-        storyline: PropTypes.string.isRequired,
-        imagePath: PropTypes.string.isRequired,
-        rating: PropTypes.number.isRequired,
       },
     ),
   ).isRequired,
