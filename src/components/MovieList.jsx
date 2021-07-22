@@ -1,9 +1,9 @@
-import React from 'react';
-
-class MovieList extends React.Component {
-  render() {
-    
-  }
-}
-
-export default MovieList;
+// import React from 'react';
+//
+// class MovieList extends React.Component {
+//   render() {
+//     return ();
+//   }
+// }
+//
+// export default MovieList;
