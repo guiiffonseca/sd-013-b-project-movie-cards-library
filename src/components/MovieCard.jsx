@@ -5,7 +5,6 @@ class MovieCard extends Component {
     return (
       <p>a</p>
     );
-
   }
 }
 
