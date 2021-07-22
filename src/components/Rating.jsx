@@ -2,8 +2,6 @@
 // import PropTypes from 'prop-types';
 // class Rating extends Component {
 //   render() {
-    
 //   }
 // }
-
 // export default Rating
