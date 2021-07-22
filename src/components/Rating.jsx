@@ -8,6 +8,7 @@ class Rating extends React.Component {
     return (
       <div className="rating">
         {rating}
+        {console.log(rating)}
       </div>
     );
   }
