@@ -15,7 +15,7 @@ class App extends React.Component {
             return (
               <section key={title} className='movie-card'>
                 <div className='movie-card-body'>
-                  <img src={imagePath} className='movie-card-image' />
+                  <img src={imagePath} className='movie-card-image' alt='' />
                   <p className='movie-card-title'>{title}</p>
                   <p className='movie-card-subtitle'>{subtitle}</p>
                   <p className='movie-card-storyline'>{storyline}</p>
