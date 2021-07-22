@@ -3,15 +3,21 @@ import PropTypes from 'prop-types';
 
 class MovieCart extends React.Component {
   render() {
-    const { data } = this.props;
+    const { movie } = this.props;
     return (
-      <h1>{data.subtitle}</h1>
+      <div>
+        <h1>{movie.title}</h1>
+        <h2>{movie.subtitle}</h2>
+        <p>{movie.storyline}</p>
+        <img src={movie.imagePath} alt="" />
+        <span>{movie.rating}</span>
+      </div>
     );
   }
 }
 
 MovieCart.propTypes = {
-  data: PropTypes.shape(
+  movie: PropTypes.shape(
     {
       title: PropTypes.string.isRequired,
       subtitle: PropTypes.string.isRequired,
