@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
@@ -8,19 +9,14 @@ class MovieList extends Component {
     return (
       <ul className="movie-list">
         {movieData.map((movie, index) => (
-          <li className="movie-card movie-card-body" key={ index }>
-            <img
-              src={ movie.imagePath }
-              alt={ movie.title }
-              className="movie-card-image"
-            />
-            <h2 className="movie-card-title">{ movie.title }</h2>
-            <h3 className="movie-card-subtitle">{ movie.subtitle }</h3>
-            <p className="movie-card-storyline">{ movie.storyline }</p>
-            <div className="movie-card-rating">
-              <span className="rating">{movie.rating}</span>
-            </div>
-          </li>
+          <MovieCard
+            key={ index }
+            title={ movie.title }
+            subtitle={ movie.subtitle }
+            storyline={ movie.storyline }
+            rating={ movie.rating }
+            imagePath={ movie.imagePath }
+          />
         ))}
       </ul>
     );
