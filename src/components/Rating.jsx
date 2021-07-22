@@ -4,4 +4,5 @@
 //   render() {
 //   }
 // }
+// 
 // export default Rating
