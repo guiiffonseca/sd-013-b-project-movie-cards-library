@@ -3,8 +3,11 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
-    console.log('Hello');
-    return <h1>Hello World!</h1>;
+    return (
+      <header className="movie-card-header page-title">
+        <h1>Movie Cards Library</h1>
+      </header>
+    );
   }
 }
 
