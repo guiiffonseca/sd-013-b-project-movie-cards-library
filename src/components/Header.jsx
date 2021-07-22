@@ -1,4 +1,4 @@
-// iimplement Header component here
+// implement Header component here
 
 import React from 'react';
 
