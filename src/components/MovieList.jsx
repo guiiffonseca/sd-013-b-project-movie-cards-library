@@ -9,7 +9,7 @@ class MovieList extends Component {
       <div>
         { movies.map(({ title, subtitle, storyline, rating, imagePath }, index) => (
           <section key={ index }>
-            <img source={ imagePath } alt="Movie illustration.png" />
+            <img src={ imagePath } alt="Movie illustration.png" />
             <h3>{title}</h3>
             <h2>{subtitle}</h2>
             <p>{storyline}</p>
