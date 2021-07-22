@@ -1,4 +1,4 @@
-const movies = [ 
+const movies = [
   {
     title: 'Kingsglaive',
     subtitle: 'Final Fantasy XV',
