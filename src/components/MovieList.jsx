@@ -17,13 +17,9 @@ export default class MovieList extends React.Component {
         {movies.map((movie) => (
 
           <MovieCard
-            key={ movie.title }
+            key={ `${movie.title}` }
             movie={ movie }
 
-            // name={ title }
-            // subtitle={ subtitle }
-            // story={ storyline }
-            // image={ imagePath }
           />
         ))}
 
