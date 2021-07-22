@@ -3,7 +3,13 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    return <div>MovieCard</div>;
+    const { movie } = this.props;
+    return (
+      <div>
+        {/* prettier-ignore */}
+        <img src={ movie.imagePath } alt={`Movie ${movie.title}`} />
+      </div>
+    );
   }
 }
 
