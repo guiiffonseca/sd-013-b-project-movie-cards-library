@@ -1,9 +1,10 @@
 // implement MovieCard component here
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props.movie;
+    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <div>
         <h4>{ title }</h4>
@@ -14,5 +15,15 @@ class MovieCard extends Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: propTypes.exact({
+    title: propTypes.string.isRequired,
+    subtitle: propTypes.string.isRequired,
+    storyline: propTypes.string.isRequired,
+    rating: propTypes.string.isRequired,
+    pathImage: propTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default MovieCard;
