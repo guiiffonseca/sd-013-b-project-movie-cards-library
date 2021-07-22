@@ -24,7 +24,7 @@ MovieList.propTypes = {
     PropTypes.shape(
       {
         key: PropTypes.string.isRequired,
-        movie: PropTypes.arrayOf.isRequired,
+        movie: PropTypes.arrayOf(PropTypes.object).isRequired,
       },
     ),
   ).isRequired,
