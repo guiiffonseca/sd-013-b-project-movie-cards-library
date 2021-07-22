@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+// class MovieList extends Component {
+//   // render() {
+//   //   return (
+//   //   )}
+// }
 
-class MovieList extends Component {
-
-}
-
-export default MovieList
+// export default MovieList
