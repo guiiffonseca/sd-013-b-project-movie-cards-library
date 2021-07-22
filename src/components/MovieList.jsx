@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-class MovieList extends Component {
+export default class MovieList extends Component {
   render() {
     const { movies } = this.props;
     return (
@@ -17,5 +17,3 @@ class MovieList extends Component {
 MovieList.propTypes = {
   movies: propTypes.arrayOf(propTypes.object).isRequired,
 };
-
-export default MovieList;
