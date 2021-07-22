@@ -1,10 +1,15 @@
 // implement MovieList component here
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 
-class MovieList extends Component {
-  render() {
-    return <h1>asd</h1>;
-  }
-}
+// class MovieList extends Component {
+//   render() {
+//     const {movies} = this.props
+//     return (
+//       <div>
+//         <MovieCard/>
+//       </div>
+//     )
+//   }
+// }
 
-export default MovieList;
+// export default MovieList;
