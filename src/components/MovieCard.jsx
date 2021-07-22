@@ -8,6 +8,7 @@ class MovieCard extends React.Component {
       <div>
         {/* prettier-ignore */}
         <img src={ movie.imagePath } alt={ `Movie ${movie.title}` } />
+        <h4>{movie.title}</h4>
       </div>
     );
   }
