@@ -54,3 +54,5 @@ describe('5 - Passe uma key para cada `<MovieCard />` renderizado', () => {
     });
   });
 });
+
+export default movies;
