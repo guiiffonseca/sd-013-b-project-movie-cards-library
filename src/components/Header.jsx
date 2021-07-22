@@ -1,2 +1,0 @@
-// implement Header component here
-// 
