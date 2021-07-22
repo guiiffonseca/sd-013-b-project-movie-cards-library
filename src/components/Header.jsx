@@ -1,6 +1,5 @@
 // implement Header component here
 import React, { Component } from 'react';
-import propTypes from 'prop-types';
 
 class Header extends Component {
   render() {
@@ -11,10 +10,5 @@ class Header extends Component {
     );
   }
 }
-
-Header.propTypes = {
-  text: propTypes.string.isRequired,
-};
-
 
 export default Header;
