@@ -1,4 +1,4 @@
-const movies = [
+const data = [
   {
     title: 'Kingsglaive',
     subtitle: 'Final Fantasy XV',
@@ -36,4 +36,4 @@ const movies = [
   },
 ];
 
-export default movies;
+export default data;
