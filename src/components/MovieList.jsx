@@ -1,12 +1,14 @@
 import React from 'react';
 
-class Movie List extends React.Component {
+class MovieList extends React.Component {
   render() {
     return (
-      <header>
-        <h1>Movie Cards Library</h1>
-      </header>
+      <section>
+        <dir>
+          { this.props.movies}
+        </dir>
+      </section>
     );
   }
 }
-export default Header;
+export default MovieList;
