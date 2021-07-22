@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import MovieCard from './components/MovieCard';
 // import MovieList from './components/MovieList';
 import movies from './data';
 
@@ -11,21 +12,16 @@ class App extends React.Component {
         <Header />
         {/* <MovieList movies={movies} /> */}
         <div className='movie-list'>
-          {movies.map(({ title, subtitle, storyline, rating, imagePath }) => {
-            return (
-              <section key={title} className='movie-card'>
-                <div className='movie-card-body'>
-                  <img src={imagePath} className='movie-card-image' alt='' />
-                  <p className='movie-card-title'>{title}</p>
-                  <p className='movie-card-subtitle'>{subtitle}</p>
-                  <p className='movie-card-storyline'>{storyline}</p>
-                  <div className='movie-card-raitng'>
-                    Rating <p className='rating'> {rating}</p>
-                  </div>
-                </div>
-              </section>
-            );
-          })}
+          {movies.map(({ title, subtitle, storyline, rating, imagePath }) => (
+            <MovieCard
+              key={title}
+              title={title}
+              subtitle={subtitle}
+              storyline={storyline}
+              rating={rating}
+              imagePath={imagePath}
+            />
+          ))}
         </div>
       </div>
     );
