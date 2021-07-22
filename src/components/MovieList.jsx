@@ -13,8 +13,8 @@ class MovieList extends Component {
             key={ title }
             title={ title }
             subtitle={ subtitle }
-            rating={ rating }
             storyline={ storyline }
+            rating={ rating }
             imagePath={ imagePath }
           />
         )) }
@@ -31,10 +31,24 @@ MovieList.propTypes = {
         subtitle: PropTypes.string.isRequired,
         storyline: PropTypes.string.isRequired,
         rating: PropTypes.number.isRequired,
-        imagePath: PropTypes.string.isRequired,
+        imagePath: PropTypes.string,
       },
     ),
   ).isRequired,
 };
+
+// MovieList.defaultProps = {
+//   movies: PropTypes.arrayOf(
+//     PropTypes.shape(
+//       {
+//         title: '',
+//         subtitle: '',
+//         storyline: '',
+//         rating: number,
+//         imagePath: '',
+//       },
+//     ),
+//   )
+// };
 
 export default MovieList;
