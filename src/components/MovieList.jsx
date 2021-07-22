@@ -22,6 +22,3 @@ MovieList.propTypes = {
 };
 
 export default MovieList;
-
-// Estudo sobre propTypes
-// https://stackoverflow.com/questions/41771217/react-linter-airbnb-proptypes-array
