@@ -7,7 +7,6 @@ body {
 .cabecalho {
   background-color: black;
   color: #f8f9fa;
-  height: 90px;
   display: flex;
   justify-content: center;
 }
