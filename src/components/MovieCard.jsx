@@ -1,10 +1,23 @@
-import React from "react"
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
-    render() {
-        const { movie } = this.props
-        return <h1>{movie}</h1>;
-    }
+  render() {
+    const { movie } = this.props;
+    const { title, subtitle, storyline, imagePath } = movie;
+    return (
+      <div>
+        <h4>{ title }</h4>
+        <h5>{subtitle}</h5>
+        <img src={ imagePath } alt="" />
+        <p>{storyline}</p>
+      </div>
+    );
+  }
 }
 
-export default MovieCard
+MovieCard.propTypes = {
+  movie: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+export default MovieCard;
