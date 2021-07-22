@@ -17,7 +17,7 @@ class MovieCard extends React.Component {
     );
   }
 }
-
+// teste
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
