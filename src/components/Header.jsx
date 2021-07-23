@@ -7,7 +7,7 @@ class Header extends Component {
     const text = 'Movie Cards Library';
     return (
       <header className="movie-card-header">
-        <h1>{text}</h1>
+        <h1 className="page-title">{text}</h1>
       </header>
     );
   }
