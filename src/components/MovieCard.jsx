@@ -19,16 +19,14 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.objectOf(
-    PropTypes.shape(
-      {
-        title: PropTypes.string.isRequired,
-        subtitle: PropTypes.string.isRequired,
-        storyline: PropTypes.string.isRequired,
-        imagePath: PropTypes.string.isRequired,
-        rating: PropTypes.number.isRequired,
-      },
-    ),
+  movie: PropTypes.shape(
+    {
+      title: PropTypes.string.isRequired,
+      subtitle: PropTypes.string.isRequired,
+      storyline: PropTypes.string.isRequired,
+      imagePath: PropTypes.string.isRequired,
+      rating: PropTypes.number.isRequired,
+    },
   ).isRequired,
 };
 
