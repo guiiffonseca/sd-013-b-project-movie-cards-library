@@ -16,7 +16,7 @@ class MovieCard extends Component {
     );
   }
 }
-
+// teste
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string,
