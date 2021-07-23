@@ -8,13 +8,15 @@ class MovieCard extends Component {
     const { movie } = this.props;
     const { title, subtitle, storyline, imagePath, rating } = movie;
     return (
-      <section className="movie-card">
-        <img src={ imagePath } alt="" className="movie-card-image" />
-        <h4 className="movie-card-title">{title}</h4>
-        <h5 className="movie-card-subtitle">{subtitle}</h5>
-        <p className="movie-card-storyline">{storyline}</p>
-        <Rating rating={ rating } />
-      </section>
+      <div className="movie-card-body">
+        <section className="movie-card">
+          <img src={ imagePath } alt="" className="movie-card-image" />
+          <h4 className="movie-card-title">{title}</h4>
+          <h5 className="movie-card-subtitle">{subtitle}</h5>
+          <p className="movie-card-storyline">{storyline}</p>
+          <Rating rating={ rating } />
+        </section>
+      </div>
     );
   }
 }
@@ -26,17 +28,7 @@ MovieCard.propTypes = {
     storyline: PropTypes.string,
     imagePath: PropTypes.string,
     rating: PropTypes.number,
-  }),
-};
-
-MovieCard.defaultProps = {
-  movie: {
-    title: 'Movie Title 1',
-    subtitle: 'Movie Subtitle 1',
-    storyline: 'Movie Storyline 1',
-    rating: 123,
-    imagePath: 'images/movie_1',
-  },
+  }).isRequired,
 };
 
 export default MovieCard;

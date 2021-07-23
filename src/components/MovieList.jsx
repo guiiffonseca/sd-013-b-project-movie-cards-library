@@ -6,9 +6,9 @@ class MovieList extends Component {
   render() {
     const { movies } = this.props;
     return (
-      <div className="movie-card-body">
+      <div className="movie-list">
         {movies.map((movie) => (
-          <MovieCard movie={ movie } key={ movie.title } />
+          <MovieCard movie={ movie } key={ movie.title } className="movie-card-body" />
         ))}
       </div>
     );
@@ -16,33 +16,7 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object),
-};
-
-MovieList.defaultProps = {
-  movies: [
-    {
-      title: 'Movie Title 1',
-      subtitle: 'Movie Subtitle 1',
-      storyline: 'Movie Storyline 1',
-      rating: 4.5,
-      imagePath: 'images/movie_1',
-    },
-    {
-      title: 'Movie Title 2',
-      subtitle: 'Movie Subtitle 2',
-      storyline: 'Movie Storyline 2',
-      rating: 4.5,
-      imagePath: 'images/movie_2',
-    },
-    {
-      title: 'Movie Title 3',
-      subtitle: 'Movie Subtitle 3',
-      storyline: 'Movie Storyline 3',
-      ratingThree: 3,
-      imagePath: 'images/movie_3',
-    },
-  ],
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MovieList;
