@@ -15,8 +15,15 @@ class MovieList extends React.Component {
 }
 
 MovieList.propTypes = {
-  title: PropTypes.string.isRequired,
-  /* map: PropTypes.func.isRequired, */
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      storyline: PropTypes.string,
+      rating: PropTypes.number,
+      imagePath: PropTypes.string,
+    }),
+  ).isRequired,
 };
 
 export default MovieList;
