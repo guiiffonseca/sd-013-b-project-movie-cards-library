@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import movies from '../data';
 
 class Rating extends React.Component {
   render() {
+    const { movies } = this.props;
     return (
       <div className="rating">
         { movies.map(({ title, rating }) => (
