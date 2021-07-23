@@ -11,7 +11,8 @@ class MovieList extends React.Component {
         { movies.map(({ title, subtitle }) => (
           <MovieCard
             key={ title }
-            movie={ subtitle }
+            subtitle={ subtitle }
+            storyLine={ storyLine }
           />
         ))}
       </section>
