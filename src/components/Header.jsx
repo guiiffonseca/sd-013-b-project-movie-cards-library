@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class Header extends React.Component {
   render() {
@@ -6,7 +6,7 @@ class Header extends React.Component {
       <header>
         <h1>Movie Cards Library</h1>
       </header>
-    ) 
+    );
   }
 }
 
