@@ -5,7 +5,7 @@ Manual da Pessoa Estudante da Trybe.
 
 # Boas vindas ao repositório do projeto Movie Cards Library!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
+Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_!
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
 
@@ -24,43 +24,44 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Dica: desativando testes](#dica-desativando-testes)
   - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
-    - [1 - Crie um componente `<Header />`](#1---crie-um-componente-header-)
-    - [2 - Renderize um texto no `<Header />`](#2---renderize-um-texto-no-header-)
-    - [3 - Crie um componente `<MovieList />`](#3---crie-um-componente-movielist-)
-    - [4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`](#4---renderize-componentes-moviecard--dentro-de-movielist-)
-    - [5 - Passe uma key para cada `<MovieCard />` renderizado](#5---passe-uma-key-para-cada-moviecard--renderizado)
-    - [6 - Crie um componente `<MovieCard />`](#6---crie-um-componente-moviecard-)
-    - [7 - Renderize a imagem do filme dentro de uma tag `img`](#7---renderize-a-imagem-do-filme-dentro-de-uma-tag-img)
-    - [8 - Renderize o título do filme dentro de uma tag `h4`](#8---renderize-o-título-do-filme-dentro-de-uma-tag-h4)
-    - [9 - Renderize o subtítulo do filme dentro de uma tag `h5`](#9---renderize-o-subtítulo-do-filme-dentro-de-uma-tag-h5)
-    - [10 - Renderize a sinopse do filme dentro de uma tag `p`](#10---renderize-a-sinopse-do-filme-dentro-de-uma-tag-p)
-    - [11 - Crie um componente `<Rating />`](#11---crie-um-componente-rating-)
-    - [12 - Renderize a nota de um filme dentro de `Rating`](#12---renderize-a-nota-de-um-filme-dentro-de-rating)
-    - [13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`](#13---renderize-o-componente-rating--dentro-de-moviecard-)
-    - [14 - Passe como prop para o componente `<Rating />` o atributo `rating`](#14---passe-como-prop-para-o-componente-rating--o-atributo-rating)
-    - [15 - Crie um componente `<App />`](#15---crie-um-componente-app-)
-    - [16 - Renderize `<MovieList />` dentro do componente `<App />`](#16---renderize-movielist--dentro-do-componente-app-)
-    - [17 - Adicione PropTypes a todos os componentes](#17---adicione-proptypes-a-todos-os-componentes)
+  - [1 - Crie um componente `<Header />`](#1---crie-um-componente-header-)
+  - [2 - Renderize um texto no `<Header />`](#2---renderize-um-texto-no-header-)
+  - [3 - Crie um componente `<MovieList />`](#3---crie-um-componente-movielist-)
+  - [4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`](#4---renderize-componentes-moviecard--dentro-de-movielist-)
+  - [5 - Passe uma key para cada `<MovieCard />` renderizado](#5---passe-uma-key-para-cada-moviecard--renderizado)
+  - [6 - Crie um componente `<MovieCard />`](#6---crie-um-componente-moviecard-)
+  - [7 - Renderize a imagem do filme dentro de uma tag `img`](#7---renderize-a-imagem-do-filme-dentro-de-uma-tag-img)
+  - [8 - Renderize o título do filme dentro de uma tag `h4`](#8---renderize-o-título-do-filme-dentro-de-uma-tag-h4)
+  - [9 - Renderize o subtítulo do filme dentro de uma tag `h5`](#9---renderize-o-subtítulo-do-filme-dentro-de-uma-tag-h5)
+  - [10 - Renderize a sinopse do filme dentro de uma tag `p`](#10---renderize-a-sinopse-do-filme-dentro-de-uma-tag-p)
+  - [11 - Crie um componente `<Rating />`](#11---crie-um-componente-rating-)
+  - [12 - Renderize a nota de um filme dentro de `Rating`](#12---renderize-a-nota-de-um-filme-dentro-de-rating)
+  - [13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`](#13---renderize-o-componente-rating--dentro-de-moviecard-)
+  - [14 - Passe como prop para o componente `<Rating />` o atributo `rating`](#14---passe-como-prop-para-o-componente-rating--o-atributo-rating)
+  - [15 - Crie um componente `<App />`](#15---crie-um-componente-app-)
+  - [16 - Renderize `<MovieList />` dentro do componente `<App />`](#16---renderize-movielist--dentro-do-componente-app-)
+  - [17 - Adicione PropTypes a todos os componentes](#17---adicione-proptypes-a-todos-os-componentes)
 - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
 - [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
 
 # Habilidades
 
-  Nesse projeto, você será capaz de:
-  - Saber a melhor forma para instalar um gerenciador de pacotes
-  - Inicializar um projeto em **React**
-  - Utilizar JSX no **React**
-  - Utilizar o **ReactDOM.render** para renderizar elementos numa página web
-  - Utilizar o `import` para usar código externo junto ao seu
-  - Criar componentes **React** corretamente
-  - Fazer uso de `props` corretamente
-  - Fazer composição de componentes corretamente
-  - Criar múltiplos componentes dinamicamente
-  - Utilizar **PropTypes** para checar o tipo de uma prop no uso de um componente
-  - Utilizar **PropTypes** para garantir a presença de props obrigatórias no uso de um componente
-  - Utilizar **PropTypes** para checar que uma prop é um objeto de formato específico
-  - Utilizar **PropTypes** para garantir que uma prop é um array com elementos de um determinado tipo
+Nesse projeto, você será capaz de:
+
+- Saber a melhor forma para instalar um gerenciador de pacotes
+- Inicializar um projeto em **React**
+- Utilizar JSX no **React**
+- Utilizar o **ReactDOM.render** para renderizar elementos numa página web
+- Utilizar o `import` para usar código externo junto ao seu
+- Criar componentes **React** corretamente
+- Fazer uso de `props` corretamente
+- Fazer composição de componentes corretamente
+- Criar múltiplos componentes dinamicamente
+- Utilizar **PropTypes** para checar o tipo de uma prop no uso de um componente
+- Utilizar **PropTypes** para garantir a presença de props obrigatórias no uso de um componente
+- Utilizar **PropTypes** para checar que uma prop é um objeto de formato específico
+- Utilizar **PropTypes** para garantir que uma prop é um array com elementos de um determinado tipo
 
 # Entregáveis
 
@@ -83,78 +84,85 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 
 ## Data de Entrega
 
-  - Será `1` dia de projeto.
-  - Data de entrega para avaliação final do projeto: `29/07/2021 - 14:00h`.
+- Será `1` dia de projeto.
+- Data de entrega para avaliação final do projeto: `29/07/2021 - 14:00h`.
 
 # Instruções para entregar seu projeto
 
 ## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-013-b-project-movie-cards-library.git`.
-  * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-013-b-project-movie-cards-library`
+
+- `git clone https://github.com/tryber/sd-013-b-project-movie-cards-library.git`.
+- Entre na pasta do repositório que você acabou de clonar:
+  - `cd sd-013-b-project-movie-cards-library`
 
 2. Instale as dependências, inicialize o projeto e rode os testes
-  * Instale as dependências:
-    * `npm install`
-    
-    ⚠️ **ATENÇÃO** Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto e essa atualização gera conflitos com o avaliador. ⚠️
 
-  * Inicialize o projeto:
-    * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
-  * Verifique que os testes estão executando:
-    * `npm test` (os testes devem rodar e falhar)
+- Instale as dependências:
+
+  - `npm install`
+
+  ⚠️ **ATENÇÃO** Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto e essa atualização gera conflitos com o avaliador. ⚠️
+
+- Inicialize o projeto:
+  - `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
+- Verifique que os testes estão executando:
+  - `npm test` (os testes devem rodar e falhar)
 
 3. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
-  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-movie-cards-library`
+
+- Verifique que você está na branch `master`
+  - Exemplo: `git branch`
+- Se não estiver, mude para a branch `master`
+  - Exemplo: `git checkout master`
+- Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
+  - Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
+  - Exemplo: `git checkout -b joaozinho-movie-cards-library`
 
 4. Adicione alguma mudança ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer listada a pasta _components_ em vermelho)
-  * Adicione o novo arquivo ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        * `git status` (deve aparecer listado o arquivo _components/Header.jsx_ em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
-        * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
+
+- Verifique que as mudanças ainda não estão no _stage_
+  - Exemplo: `git status` (deve aparecer listada a pasta _components_ em vermelho)
+- Adicione o novo arquivo ao _stage_ do Git
+  - Exemplo:
+    - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
+    - `git status` (deve aparecer listado o arquivo _components/Header.jsx_ em verde)
+- Faça o `commit` inicial
+  - Exemplo:
+    - `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
+    - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
 5. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin joaozinho-movie-cards-library`
+
+- Usando o exemplo anterior: `git push -u origin joaozinho-movie-cards-library`
 
 6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-movie-cards-library/pulls)
-  * Clique no botão verde _"New pull request"_
-  * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-  * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-movie-cards-library/pulls) e confira que o seu _Pull Request_ está criado
+
+- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-movie-cards-library/pulls)
+- Clique no botão verde _"New pull request"_
+- Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
+- Clique no botão verde _"Create pull request"_
+- Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+- **Não se preocupe em preencher mais nada por enquanto!**
+- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-movie-cards-library/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
 ## Durante o desenvolvimento
 
-* ⚠ **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
+- ⚠ **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
 
-* Faça `commits` das alterações que você fizer no código regularmente
+- Faça `commits` das alterações que você fizer no código regularmente
 
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
+- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
 
-* Os comandos que você utilizará com mais frequência são:
+- Os comandos que você utilizará com mais frequência são:
   1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
   2. `git add` _(para adicionar arquivos ao stage do Git)_
   3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  5. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  4. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
+  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
+  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
 
 ---
 
@@ -164,10 +172,10 @@ Este repositório já contem um _template_ com um App React criado e configurado
 
 Será necessário criar quatro `React Components`:
 
-   - Header
-   - MovieList
-   - MovieCard
-   - Rating
+- Header
+- MovieList
+- MovieCard
+- Rating
 
 Cada componente representa uma parte específica do site, conforme ilustrado abaixo:
 
@@ -188,11 +196,10 @@ Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre
 Se fizermos uma implementação simples do componente `<Header />`, que não renderiza nada:
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 class Header extends React.Component {
-  render() {
-  }
+  render() {}
 }
 
 export default Header;
@@ -214,11 +221,10 @@ Para garantir a qualidade do código, vamos utilizar neste projeto os linters `E
 Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
 e de fácil manutenção! Para rodá-los localmente no projeto, execute os comandos abaixo:
 
-  ```bash
+```bash
 npm run lint
 npm run lint:styles
 ```
-
 
 ⚠️ **PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.
 ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
@@ -230,10 +236,10 @@ ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
 Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
 
 ```js
-it.skip('it includes the text `Movie Cards Library` inside a h1 tag', () => {
+it.skip("it includes the text `Movie Cards Library` inside a h1 tag", () => {
   wrapper = shallow(<Header />);
 
-  expect(wrapper.find('header h1').text()).toBe('Movie Cards Library');
+  expect(wrapper.find("header h1").text()).toBe("Movie Cards Library");
 });
 ```
 
@@ -253,7 +259,7 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 # Requisitos do projeto
 
-Para melhor orientação nesse primeiro contato com React, os requisitos do projeto contém *subitens* para guiar seu cumprimento. Assim sendo o requisito 1, por exemplo, contém os subitens `1.1` e `1.2`, com cada subitem associado a um teste. Um requisito só é considerado completo quando todos os seus subitens estão feitos. **Requisitos parcialmente feitos não são considerados!**
+Para melhor orientação nesse primeiro contato com React, os requisitos do projeto contém _subitens_ para guiar seu cumprimento. Assim sendo o requisito 1, por exemplo, contém os subitens `1.1` e `1.2`, com cada subitem associado a um teste. Um requisito só é considerado completo quando todos os seus subitens estão feitos. **Requisitos parcialmente feitos não são considerados!**
 
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **Lint** ⚠️
 
@@ -263,7 +269,7 @@ Criar um componente que represente o cabeçalho da página.
 
 **O que será verificado:**
 
-  - Renderize o componente `<Header />`.
+- Renderize o componente `<Header />`.
 
 ### 2 - Renderize um texto no `<Header />`
 
@@ -271,7 +277,7 @@ O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro 
 
 **O que será verificado:**
 
-  - Renderize o texto "Movie Cards Library" dentro de `<Header />`.
+- Renderize o texto "Movie Cards Library" dentro de `<Header />`.
 
 ### 3 - Crie um componente `<MovieList />`
 
@@ -279,7 +285,7 @@ Crie um componente que represente toda a área com os cartões de filmes. `<Movi
 
 **O que será verificado:**
 
-  - Renderize o componente `<MovieList />`
+- Renderize o componente `<MovieList />`
 
 ### 4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`
 
@@ -287,7 +293,7 @@ Crie um componente que represente toda a área com os cartões de filmes. `<Movi
 
 **O que será verificado:**
 
-  - Renderize componentes `<MovieCard />` dentro de `MovieList`.
+- Renderize componentes `<MovieCard />` dentro de `MovieList`.
 
 ### 5 - Passe uma key para cada `<MovieCard />` renderizado
 
@@ -295,7 +301,7 @@ Crie um componente que represente toda a área com os cartões de filmes. `<Movi
 
 **O que será verificado:**
 
- - Passe uma key para cada `<MovieCard />` renderizado.
+- Passe uma key para cada `<MovieCard />` renderizado.
 
 ### 6 - Crie um componente `<MovieCard />`
 
@@ -303,7 +309,7 @@ Crie um componente que represente um cartão de filme. `<MovieCard />` deve rece
 
 **O que será verificado:**
 
-  - Renderize o componente `<MovieCard />`.
+- Renderize o componente `<MovieCard />`.
 
 ### 7 - Renderize a imagem do filme dentro de uma tag `img`
 
@@ -311,8 +317,7 @@ Crie um componente que represente um cartão de filme. `<MovieCard />` deve rece
 
 **O que será verificado:**
 
-  - Renderize a imagem do filme dentro de uma tag `img`.
-
+- Renderize a imagem do filme dentro de uma tag `img`.
 
 ### 8 - Renderize o título do filme dentro de uma tag `h4`
 
@@ -320,7 +325,7 @@ Crie um componente que represente um cartão de filme. `<MovieCard />` deve rece
 
 **O que será verificado:**
 
-  - Renderize o título do filme dentro de uma tag `h4`.
+- Renderize o título do filme dentro de uma tag `h4`.
 
 ### 9 - Renderize o subtítulo do filme dentro de uma tag `h5`
 
@@ -328,7 +333,7 @@ Crie um componente que represente um cartão de filme. `<MovieCard />` deve rece
 
 **O que será verificado:**
 
-  - Renderize o subtítulo do filme dentro de uma tag `h5`.
+- Renderize o subtítulo do filme dentro de uma tag `h5`.
 
 ### 10 - Renderize a sinopse do filme dentro de uma tag `p`
 
@@ -336,7 +341,7 @@ Crie um componente que represente um cartão de filme. `<MovieCard />` deve rece
 
 **O que será verificado:**
 
-  - Renderize a sinopse do filme dentro de uma tag `p`.
+- Renderize a sinopse do filme dentro de uma tag `p`.
 
 ### 11 - Crie um componente `<Rating />`
 
@@ -344,7 +349,7 @@ Crie um componente que represente a avaliação de um filme.
 
 **O que será verificado:**
 
-  - Renderize o componente `<Rating />`.
+- Renderize o componente `<Rating />`.
 
 ### 12 - Renderize a nota de um filme dentro de `Rating`
 
@@ -352,7 +357,7 @@ Crie um componente que represente a avaliação de um filme.
 
 **O que será verificado:**
 
-  - Renderize a nota de um filme dentro de `Rating`.
+- Renderize a nota de um filme dentro de `Rating`.
 
 ### 13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`
 
@@ -360,7 +365,7 @@ Crie um componente que represente a avaliação de um filme.
 
 **O que será verificado:**
 
-  - Renderize o componente `<Rating />` dentro de `<MovieCard />`.
+- Renderize o componente `<Rating />` dentro de `<MovieCard />`.
 
 ### 14 - Passe como prop para o componente `<Rating />` o atributo `rating`
 
@@ -368,11 +373,11 @@ Crie um componente que represente a avaliação de um filme.
 
 **O que será verificado:**
 
-  - Passe como prop para o componente `<Rating />` o atributo `rating`.
+- Passe como prop para o componente `<Rating />` o atributo `rating`.
 
-  - O valor da *prop* `rating` é a propriedade `rating` do filme.
+- O valor da _prop_ `rating` é a propriedade `rating` do filme.
 
-  - Rating deve ter uma classe `rating`.
+- Rating deve ter uma classe `rating`.
 
 ### 15 - Crie um componente `<App />`
 
@@ -380,7 +385,7 @@ O componente `<App />` deve renderizar um componente `<Header />`.
 
 **O que será verificado:**
 
-  - Renderize `<Header />` dentro do componente `<App />`.
+- Renderize `<Header />` dentro do componente `<App />`.
 
 ### 16 - Renderize `<MovieList />` dentro do componente `<App />`
 
@@ -388,7 +393,7 @@ O componente `<App />` deve renderizar um componente `<MovieList />`, passando c
 
 **O que será verificado:**
 
-  - Renderize `<MovieList />` dentro do componente `<App />`
+- Renderize `<MovieList />` dentro do componente `<App />`
 
 ### 17 - Adicione PropTypes a todos os componentes
 
@@ -400,10 +405,10 @@ Todos os componentes que recebem props devem ter suas proptypes corretamente dec
 
 Para **"entregar"** seu projeto, siga os passos a seguir:
 
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`
+- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
+  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
+  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
+  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
