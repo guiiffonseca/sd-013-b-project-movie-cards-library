@@ -1,23 +1,29 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-// Requisito 3
-
-class MoveList extends React.Component {
+class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <main>
+      <main className="movie-list">
         {movies.map((data) => <MovieCard key={ data.title } movie={ data } />)}
       </main>
     );
   }
 }
 
-// Verifica-se os dados recebidos são válidos
-/*MoveList.propTypes = {
-  movie: PropTypes.arrayOf(PropTypes.object).isRequired,
-};*/
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape(
+      { title: PropTypes.string.isRequired,
+        subtitle: PropTypes.string.isRequired,
+        storyline: PropTypes.string.isRequired,
+        rating: PropTypes.number.isRequired,
+        imagePath: PropTypes.string.isRequired,
+      },
+    ),
+  ).isRequired,
+};
 
-export default MoveList;
+export default MovieList;
