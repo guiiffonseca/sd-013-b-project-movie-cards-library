@@ -8,7 +8,7 @@ class MovieCard extends React.Component {
     const { movie } = this.props;
     return (
       <div>
-        {/* <img src={ movie.imagePath } alt={ movie.title } /> */}
+        <img src={ movie.imagePath } alt={ movie.title } />
         {/* <h4>{ movie.title }</h4> */}
         {/* <h5>{ movie.subtitle }</h5> */}
         <span>{ movie.storyline }</span>
