@@ -1,9 +1,14 @@
-// import React from 'react';
-//
-// class MovieList extends React.Component {
-//   render() {
-//     return ();
-//   }
-// }
-//
-// export default MovieList;
+import React from 'react';
+import MovieCard from './MovieCard';
+
+class MovieList extends React.Component {
+  render() {
+    return (
+      <div className="movie-list">
+        <MovieCard />
+      </div>
+    );
+  }
+}
+
+export default MovieList;
