@@ -5,17 +5,18 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
+    // console.log(this.props);
     return (
       <section className="movie-list">
-        { movies.map(({ title, subtitle, storyline, rating, imagePath }) => (
+        { movies.map((movie) => (
           <MovieCard
-            movie={ movies }
-            key={ title }
-            title={ title }
-            subtitle={ subtitle }
-            storyline={ storyline }
-            rating={ rating }
-            imagePath={ imagePath }
+            movie={ movie }
+            key={ movie.title }
+            // title={ title }
+            // subtitle={ subtitle }
+            // storyline={ storyline }
+            // rating={ rating }
+            // imagePath={ imagePath }
           />
         )) }
       </section>
