@@ -2,9 +2,10 @@
 import React from 'react';
 
 const Rating = () => {
+    let note = "3"
     return (
-        <div>
-            
+        <div className="rating">
+            {note}
         </div>
     )
 }
