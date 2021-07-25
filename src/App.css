@@ -37,10 +37,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 5px;
-  overflow: hidden;
-  width: 200px;
-  padding: 0;
   opacity: 0.9;
+  overflow: hidden;
+  padding: 0;
+  width: 200px;
 }
 
 .movie-card-image {
@@ -54,7 +54,6 @@ body {
 
 .movie-card-body {
   flex: 1 1 auto;
-  /* padding: 20px; */
 }
 
 .div-text {
@@ -66,7 +65,7 @@ body {
 }
 
 .movie-card-title {
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 20px;
