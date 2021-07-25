@@ -3,11 +3,11 @@ import React from "react";
 
 const MovieCard = () => {
     let imagePath = 'images/movie_1';
-    let title = '';
+    let title ='Movie Title 1';
 
     return <div>
         <img src={imagePath}></img>
-        <h4> {title} </h4>
+        <h4>{title}</h4>
     </div>
 }
 
