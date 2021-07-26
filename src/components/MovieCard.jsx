@@ -27,3 +27,5 @@ MovieCard.propTypes = {
     rating: PropTypes.number.isRequired,
   }).isRequired,
 };
+
+export default MovieCard;

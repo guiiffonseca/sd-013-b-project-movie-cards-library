@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Header from './components/Header';
+import MovieList from './components/MovieList';
+import movies from './data';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <MovieList movie={ movie } />
+      </div>
+    );
+  }
 }
-
 export default App;
