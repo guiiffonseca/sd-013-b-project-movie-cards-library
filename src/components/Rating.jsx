@@ -1,1 +1,1 @@
-/* import React from 'react'; */
+// implement Rating component here
