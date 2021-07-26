@@ -1,11 +1,11 @@
 // implement Rating component here
 import React from 'react';
 
-const Rating = () => {
-    let note = "3"
+const Rating = (props) => {
+    let rating = props.rating
     return (
         <div className="rating">
-            {note}
+            {rating}
         </div>
     )
 }

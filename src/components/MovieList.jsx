@@ -1,14 +1,14 @@
 // implement MovieList component here
 import React from 'react';
 import MovieCard from './MovieCard';
-import PropTypes from 'prop-types';
 
-const MovieList = (movies) => {
-    const movies = this.props;
+const MovieList = (props) => {
+    const movies = props.movies;
 
     return (
         <div className="movie-list">
-            <MovieCard/>
+            {movies.map((movie) => <MovieCard key={movie.title} movie={movie}/>
+            )}
         </div>
     )
 }
