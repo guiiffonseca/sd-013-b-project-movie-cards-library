@@ -1,4 +1,4 @@
-// implement Header component heere
+// implement Header component heeere
 import React from 'react';
 
 class Header extends React.Component {
