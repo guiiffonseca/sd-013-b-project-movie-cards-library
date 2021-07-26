@@ -1,28 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import MovieCard from './MovieCard';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    const { movies, param } = this.props;
+    const { movies } = this.props;
+    const param = 'Texting';
 
     return (
       <div>
-        <p>
-          Texto:
-          { param }
-        </p>
-        <p>
-          { typeof movies }
-        </p>
-        {/* <MovieCard /> */}
+        { typeof movies }
+        { typeof param }
+        <MovieCard movie={ movies[0].title } />
+        <MovieCard movie={ movies[1].title } />
+        <MovieCard movie={ movies[2].title } />
       </div>
     );
   }
 }
 
 MovieList.propTypes = {
-  param: PropTypes.string.isRequired,
   movies: PropTypes.arrayOf(
     PropTypes.shape(
       {
