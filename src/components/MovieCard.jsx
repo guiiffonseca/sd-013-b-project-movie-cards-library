@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
-
+//
 const MovieCard = (props) => {
   const { movie } = props;
   const { imagePath } = movie;
