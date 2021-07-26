@@ -5,11 +5,10 @@ import MovieList from './components/MovieList';
 import movies from './data';
 
 function App() {
-  const text = 'textando';
   return (
     <div className="App">
       <Header />
-      <MovieList movies={ movies } param={ text } />
+      <MovieList movies={ movies } />
     </div>
   );
 }
