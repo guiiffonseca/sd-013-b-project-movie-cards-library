@@ -5,15 +5,11 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
-    const param = 'Texting';
 
     return (
       <div>
         { typeof movies }
-        { typeof param }
-        <MovieCard movie={ movies[0].title } />
-        <MovieCard movie={ movies[1].title } />
-        <MovieCard movie={ movies[2].title } />
+        {movies.map((selected, index) => <MovieCard key={ index } movie={ selected } />)}
       </div>
     );
   }
