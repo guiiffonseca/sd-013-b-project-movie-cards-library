@@ -1,11 +1,13 @@
 // implement MovieList component here
 import React from 'react';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
     return (
-      <section>
-        { this.props.movies }
+      <section className="movie-list">
+        <MovieCard />
+        {/* { this.props.movies } */}
       </section>
     );
   }
