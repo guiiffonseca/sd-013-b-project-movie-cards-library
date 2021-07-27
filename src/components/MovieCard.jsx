@@ -1,20 +1,28 @@
 import React from 'react';
 import Rating from './Rating';
-import movies from '../data';
 import '../App.css';
 
 class MovieCard extends React.Component {
   render() {
+    const { title, subtitle, storyline,
+      imagePath } = this.props.movie;
     return (
-      <div>
-        {movies.map(({ title, subtitle, storyline, imagePath }, index) => (
-          <div key={ index } className="movie-card">
-            {title}
-            {subtitle}
-            {storyline}
-            {imagePath}
-            <Rating />
-          </div>))}
+      <div className="movie-card">
+        <h4 className="movie-card-title">
+          { title }
+        </h4>
+        <h5 className="movie-card-subtitle">
+          { subtitle }
+        </h5>
+        <p className="movie-card-storyline">
+          { storyline }
+        </p>
+        <img
+          className="movie-card-image"
+          src={ imagePath }
+          alt={ title }
+        />
+        <Rating className="movie-card-rating" />
       </div>
     );
   }
