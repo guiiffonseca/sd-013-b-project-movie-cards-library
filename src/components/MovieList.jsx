@@ -7,7 +7,8 @@ class MovieList extends React.Component {
     const { movies } = this.props;
 
     return (
-
+      // observado no resopitorio de Lucas Cardim que me fez lembrar
+      // que para redenrizar precisamos declara um section, main ou div.
       <div>
         {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </div>
