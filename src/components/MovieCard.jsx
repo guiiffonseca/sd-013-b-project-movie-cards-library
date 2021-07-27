@@ -3,6 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
+// A função a seguir foi feita com base no exemplo Country List mostrado em aula
+// (https://github.com/tryber/sd-013-b-live-lectures/blob/lecture/11.2/country-list/src/components/CountryCard.jsx)
+
 class MovieCard extends React.Component {
   render() {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
