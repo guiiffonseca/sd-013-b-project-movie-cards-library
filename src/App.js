@@ -1,14 +1,14 @@
 import React from 'react';
+import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <main>
       <Header />
       <MovieList />
-    </div>
+    </main>
   );
 }
 
