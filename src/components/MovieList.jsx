@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
-import MovieList from './components/MovieList';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <MovieList />
-    </div>
-  );
+import movies from '../data';
+import MovieCard from './MovieCard';
+class MovieList extends React.Component {
+  render() {
+    return (
+      <div data-testid="movie-list" className="movie-list">
+        { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
+      </div>
+    );
+  }
 }
-export default App;
+export default MovieList;
