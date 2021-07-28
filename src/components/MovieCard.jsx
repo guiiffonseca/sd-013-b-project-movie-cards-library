@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    // eslint-disable-next-line react/prop-types
-    const { title, subtitle, storyline, imagePath, rating } = this.props;
+    const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props;
     return (
       <section className="movie-card">
         <img className="movie-card-image" src={ imagePath } alt="Capa do filme" />
@@ -27,4 +27,13 @@ class MovieCard extends React.Component {
   }
 }
 
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.string,
+  }).isRequired,
+};
 export default MovieCard;
