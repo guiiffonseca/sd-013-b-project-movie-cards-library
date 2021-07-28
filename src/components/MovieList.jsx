@@ -8,8 +8,8 @@ class MovieList extends React.Component {
     return (
       <section>
         {
-          movies.forEach((movie, index) => (
-            <MovieCard movie={ movie } key={ index } />
+          movies.map((movie) => (
+            <MovieCard movie={ movie } key={ movie.title } />
           ))
         }
       </section>
