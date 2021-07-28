@@ -6,7 +6,7 @@ class Rating extends Component {
     const { rating } = this.props;
 
     return (
-      <p className="rating" >{ rating }</p>
+      <p className="rating">{ rating }</p>
     );
   }
 }
