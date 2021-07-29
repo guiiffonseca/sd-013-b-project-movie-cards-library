@@ -7,7 +7,8 @@ class Rating extends React.Component {
     const { rating } = this.props;
     return (
       <div className="rating">
-        {rating}
+        Rating:
+        {parseFloat(rating).toPrecision(2)}
       </div>
     );
   }
