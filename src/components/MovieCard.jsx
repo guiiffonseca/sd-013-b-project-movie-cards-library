@@ -1,8 +1,6 @@
-// implement MovieCard component here
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Rating from './Rating';
-// import movies from '../data';
 
 class MovieCard extends React.Component {
   render() {
@@ -21,5 +19,17 @@ class MovieCard extends React.Component {
     );
   }
 }
+// Referencia dos PropTypes : https://github.com/tryber/sd-013-b-project-movie-cards-library/pull/70/files, Duvida identica a minha encontrado no slack: https://trybecourse.slack.com/archives/C020YFJ19DF/p1627167542498300
+// Material de estudo : https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html;
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
+};
 
 export default MovieCard;
