@@ -1,16 +1,10 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+// implement MovieCard component here
+import React, { Component } from 'react';
 
 export default class MovieCard extends Component {
-    static propTypes = {
-        prop: movies
-    }
-
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div />
+    );
+  }
 }
