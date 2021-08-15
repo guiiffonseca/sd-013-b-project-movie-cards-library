@@ -4,25 +4,15 @@ import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    const {
-      title,
-      subtitle,
-      storyline,
-      rating,
-      imagePath,
-    } = this.props;
+    const { movie } = this.props;
     return (
       <div className="movie-card">
         <li className="movie-card-body">
-          <img
-            src={ imagePath }
-            alt={ title }
-            className="movie-card-image"
-          />
-          <h2 className="movie-card-title">{ title }</h2>
-          <h3 className="movie-card-subtitle">{ subtitle }</h3>
-          <p className="movie-card-storyline">{ storyline }</p>
-          <Rating rating={ rating } />
+          <img src={ movie.imagePath } alt={ movie.title } className="movie-card-image" />
+          <h4 className="movie-card-title">{movie.title}</h4>
+          <h5 className="movie-card-subtitle">{movie.subtitle}</h5>
+          <p className="movie-card-storyline">{movie.storyline}</p>
+          <Rating rating={ movie.rating } />
         </li>
       </div>
     );
@@ -30,11 +20,15 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  title: propTypes.string.isRequired,
-  subtitle: propTypes.string.isRequired,
-  storyline: propTypes.string.isRequired,
-  rating: propTypes.number.isRequired,
-  imagePath: propTypes.string.isRequired,
+  movie: propTypes.objectOf(
+    propTypes.shape({
+      title: propTypes.string.isRequired,
+      subtitle: propTypes.string.isRequired,
+      storyline: propTypes.string.isRequired,
+      rating: propTypes.number.isRequired,
+      imagePath: propTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default MovieCard;
